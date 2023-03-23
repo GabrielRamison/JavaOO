@@ -1,0 +1,45 @@
+class Ponto{
+
+		
+	int x = 1;
+	int y = 2;
+	
+	public void definirPonto(int pX, int pY){
+		
+		x = pX;
+		y = pY;
+	
+	if (x > 0 && y > 0){
+		System.out.printf("Quadrante 1 \n");
+	}
+	else if ( x < 0 && y > 0){
+		System.out.printf("Quadrante 2 \n");
+	}
+	else if (x < 0 && y < 0){
+		System.out.printf("Quadrante 3 \n");
+	}
+	else if (x > 0 && y < 0 ){
+		System.out.printf("Quadrante 4 \n");
+	}
+
+		
+	}
+	
+	public void mostrarQuadrante(){
+		System.out.printf("Ponto: x =%d y =%d \n",x,y);
+		
+	}
+	
+	public static void main (String args[]){
+	
+	Ponto p1 = new Ponto();
+	
+	p1.definirPonto(10 , 7);
+	
+	p1.mostrarQuadrante();
+		
+	
+		}
+
+
+}
